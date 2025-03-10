@@ -26,7 +26,9 @@ services:
       - "9010:9010"  # Diferente puerto que app_a
     networks:
       - red_proyecto_ice
-
+    env_file:
+      - .env
+      
 volumes:
   pg_data_ice:
     driver: local
