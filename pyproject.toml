@@ -1,0 +1,26 @@
+[project]
+name = "api-ice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "fastapi>=0.115.11",
+    "fastapi-cors>=0.0.6",
+    "fastapi-utils>=0.8.0",
+    "gunicorn>=23.0.0",
+    "loguru>=0.7.3",
+    "pandas>=2.2.3",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.7.0,<3.0.0",
+    "python-dateutil>=2.9.0.post0",
+    "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.3",
+    "sqlalchemy>=2.0.39",
+    "sqlalchemy-utils>=0.41.2",
+    "typing-inspect>=0.9.0",
+    "uvicorn>=0.34.0",
+    "waitress>=3.0.2",
+]

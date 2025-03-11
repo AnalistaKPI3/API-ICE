@@ -2,10 +2,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:snow123@localhost/dashboard_ice"
+SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:eia.2022@localhost/task_ice"
 
 # Servidor LINUX
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:hjdCSLnhGcNNxginapydanzGIlroQvfJ@trolley.proxy.rlwy.net:47391/railway"
+#SQLALCHEMY_DATABASE_URL = "postgresql://postgres:hjdCSLnhGcNNxginapydanzGIlroQvfJ@trolley.proxy.rlwy.net:47391/railway"
 
 
 

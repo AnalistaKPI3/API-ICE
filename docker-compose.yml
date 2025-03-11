@@ -23,7 +23,7 @@ services:
     environment:
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db_ice:5432/${POSTGRES_DB}
     ports:
-      - "9010:9010"  # Diferente puerto que app_a
+      - "9090:9090"  # Diferente puerto que app_a
     networks:
       - red_proyecto_ice
     env_file:
