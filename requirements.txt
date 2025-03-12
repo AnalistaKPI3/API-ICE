@@ -18,3 +18,4 @@ python-multipart
 python-dateutil
 asyncio
 load_dotenv
+asyncpg
