@@ -7,7 +7,7 @@ import os
 
 load_dotenv()
 
-#SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:eia.2022@localhost/task_ice"
+SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:eia.2022@localhost/task_ice"
 
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
@@ -22,7 +22,8 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 # engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={}, future=True)
 # Configuración del engine con SSL requerido
 engine = create_engine(
-    DATABASE_URL,
+    SQLALCHEMY_DATABASE_URL,
+    #DATABASE_URL,
     # connect_args={
     #     "sslmode": "require",
     # },
