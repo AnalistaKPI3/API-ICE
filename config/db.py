@@ -12,16 +12,17 @@ load_dotenv()
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 POSTGRES_DB = os.getenv("POSTGRES_DB")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Servidor LINUX
-SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db_ice:5432/${POSTGRES_DB}"
+#SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db_ice:5432/${POSTGRES_DB}"
 
 
 
 # engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={}, future=True)
 # Configuración del engine con SSL requerido
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
+    DATABASE_URL,
     # connect_args={
     #     "sslmode": "require",
     # },
