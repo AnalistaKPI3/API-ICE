@@ -1,11 +1,20 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv
 
-SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:eia.2022@localhost/task_ice"
+import os
+
+load_dotenv()
+
+#SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:eia.2022@localhost/task_ice"
+
+POSTGRES_USER = os.getenv("POSTGRES_USER")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+POSTGRES_DB = os.getenv("POSTGRES_DB")
 
 # Servidor LINUX
-#SQLALCHEMY_DATABASE_URL = "postgresql://postgres:hjdCSLnhGcNNxginapydanzGIlroQvfJ@trolley.proxy.rlwy.net:47391/railway"
+SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db_ice:5432/${POSTGRES_DB}"
 
 
 

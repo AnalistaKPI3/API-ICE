@@ -13,7 +13,7 @@ services:
       - pg_data_ice:/var/lib/postgresql/data
     networks:
       - red_proyecto_ice
-
+  
   app_ice:
     build: .
     container_name: fastapi_b

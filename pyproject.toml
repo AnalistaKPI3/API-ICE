@@ -10,6 +10,7 @@ dependencies = [
     "fastapi-cors>=0.0.6",
     "fastapi-utils>=0.8.0",
     "gunicorn>=23.0.0",
+    "load-dotenv>=0.1.0",
     "loguru>=0.7.3",
     "pandas>=2.2.3",
     "psycopg2-binary>=2.9.10",
