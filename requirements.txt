@@ -22,7 +22,6 @@ packaging
 pandas
 psutil
 psycopg2-binary
-psycopg2
 pydantic
 pydantic-core
 python-dateutil
